@@ -1,0 +1,24 @@
+#include <iostream> 
+#include "vendingmac.h"
+#include <string>
+
+using namespace std; 
+
+int main()
+{
+    int purchasebottles;
+    int restockbottles;
+    
+    cout << "Enter the number of bottles to purchase: " << endl;
+    cin >> purchasebottles;
+    
+    cout << "Enter the number of bottles to restock: " << endl;
+    cin >> restockbottles;
+    
+    Vendingmachine vmobj;
+    
+    vmobj.setPurchase(purchasebottles);
+    vmobj.setRestock(restockbottles);
+    
+    
+}
