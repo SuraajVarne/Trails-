@@ -1,0 +1,39 @@
+#include <iostream> 
+#include <string> 
+#include <fstream>
+#include <cstdlib>
+
+using namespace std; 
+
+struct employee{
+    string empname;
+    int empid;
+};
+
+struct customer{
+    string name;
+    float balance;
+};
+
+
+
+int main()
+{
+    ifstream transactionfile;
+    transactionfile.open("transactiondata.txt");
+    
+    if(!transactionfile.is_open())
+    {
+        exit(EXIT_FAILURE);
+    }
+    
+    employee emp[50];
+    customer cus[50];
+    
+    
+    
+    
+    
+    
+    return 0;
+}
